@@ -2,3 +2,12 @@
   background-color: lightblue;
   height: 100vh;
 }
+
+
+h1 {
+  font-size: 3vw;
+  position: absolute;
+  top: 3vh;
+  left: 22vw;
+  color: #a900ef;
+}

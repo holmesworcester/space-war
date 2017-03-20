@@ -1,4 +1,6 @@
 // todo:
+// figure out why github deploy doesn't work!! (possibly the problem they mention??)
+// trying "now"
 // make ship movement more fluid/natural.
 // add a missle and a way to shoot it.
 // add an adversary
@@ -15,6 +17,7 @@ class App extends Component {
   render() {
     return (
       <div className="App">
+        <h1>Try the arrow keys. The ship <em>moves</em>!</h1>
        <ShipContainer />
       </div>
     );

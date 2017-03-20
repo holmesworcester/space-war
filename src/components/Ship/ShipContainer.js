@@ -23,11 +23,14 @@ class ShipContainer extends Component {
    // setting the state with a function that grabs the state might be an anti-pattern?
 
   onKeyDown(keyName) {
-    if (keyName == 'left') {
-        this.setState({shipPos: this.state.shipPos-speed}); // decrement ship pos
+
+    var pos = this.state.shipPos;
+
+    if (keyName === 'left') {
+        pos > 0 && this.setState({shipPos: pos-speed}); // decrement ship pos
     } 
     else {
-        this.setState({shipPos: this.state.shipPos+speed}); // decrement ship pos
+        pos < 100 && this.setState({shipPos: pos+speed}); // decrement ship pos
     };
   }
   

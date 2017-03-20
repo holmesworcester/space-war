@@ -20,7 +20,7 @@ class ShipContainer extends Component {
     this.onKeyDown = this.onKeyDown.bind(this);
   }
   
-   // setting the state with a function that grabs the state might be an anti-pattern?
+  // for now let's just change the state to make sure it works.
 
   onKeyDown(keyName) {
     if (keyName == 'left') {
